@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
   --main-bg: lightblue;
-  --main-red-color: #28d128;
+  --main-red-color: #ab1d1d;
 }
 
 *,
@@ -11,47 +11,56 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-body {
+body{
   background-color: var(--main-bg);
+  font-family: 'Roboto', sans-serif;
+}
+.b-logo{
+  width: 30px;
+}
+.caption-override{
+  width: 40%;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #0000009d;
+}
+
+.section-override{
+  margin-top: 2rem;
+}
+.about-me{
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
   width: 100%;
-  min-height: 100vh;
-}
-.b-logo {
-  width: 50%;
-  height: 50%;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: center;
   align-items: center;
+  border: 1px solid grey;
+  margin: 5rem 0;
+  background: #eeeeeeee;
+  min-height: 70vh;
+  padding: 1rem;
+}
+.about__left{
+  width: 27%;
+  margin-right: 1rem;
 }
 
-.b-logo img {
-  width: 20%;
-  height: auto;
+.about__left img{
+  width: 400px;
 }
-
-.underConstruction {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  z-index: 3;
-  background: hsla(219, 95%, 17%, 0.472);
-  transform: rotate(23deg);
-  width: 110%;
+.about__right{
+  width: 70%;
+  background: white;
+  padding: 4rem;
+  border-radius: 1rem;
 }
-.underConstruction h2 {
-  font-family: "Special Elite", cursive;
-  font-size: 3.5rem;
-  color: var(--main-red-color);
-  letter-spacing: 0.3rem;
-  padding-left: 18rem;
-  text-align: center;
+.about__right--title h3{
+  color: #727272;
+}
+.about__right--title p{
+  color: #838383;
+  line-height: 2rem !important;
+  font-size: 1.1rem;
 }
