@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 :root {
-  --main-bg: lightblue;
+  --main-bg: #e0f2f1;
   --main-red-color: #ab1d1d;
 }
 
@@ -14,7 +14,7 @@
   /* overflow: hidden; */
 }
 .active{
-  background-color: #b0bec5;
+  background-color: #80cbc4;
 }
 
 body{
@@ -34,17 +34,17 @@ body{
 .section-override{
   margin-top: 2rem;
 }
-.about-me, .contact-section{
+.about-me {
   display: flex;
   width: 100%;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid rgba(44, 45, 44, 0.61);
   margin: 5rem 0;
   background: rgba(44, 45, 44, .41);
   min-height: 70vh;
   padding: 1rem;
 }
+
 .about__left{
   width: 27%;
   margin-right: 1rem;
@@ -66,4 +66,19 @@ body{
   color: #838383;
   line-height: 2rem !important;
   font-size: 1.1rem;
+}
+
+
+.contact-section{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70vh;
+  padding: 1rem;
+  margin: 5rem 0;
+}
+.contact__left img{
+  width: 300px;
+  border-radius: 1.5rem;
 }
