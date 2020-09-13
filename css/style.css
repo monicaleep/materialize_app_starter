@@ -13,6 +13,9 @@
   padding: 0;
   /* overflow: hidden; */
 }
+.active{
+  background-color: #b0bec5;
+}
 
 body{
   background-color: var(--main-bg);
@@ -31,14 +34,14 @@ body{
 .section-override{
   margin-top: 2rem;
 }
-.about-me{
+.about-me, .contact-section{
   display: flex;
   width: 100%;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  border: 1px solid grey;
+  border: 1px solid rgba(44, 45, 44, 0.61);
   margin: 5rem 0;
-  background: #eeeeeeee;
+  background: rgba(44, 45, 44, .41);
   min-height: 70vh;
   padding: 1rem;
 }
@@ -51,7 +54,7 @@ body{
   width: 400px;
 }
 .about__right{
-  width: 70%;
+  width: 50%;
   background: white;
   padding: 4rem;
   border-radius: 1rem;

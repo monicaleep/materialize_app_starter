@@ -20,3 +20,10 @@ M.Slider.init(element,{
 // image material boxed
 const image = document.querySelectorAll('.materialboxed');
 M.Materialbox.init(image, {});
+
+
+//scrollspy
+const elems = document.querySelectorAll('.scrollspy');
+M.ScrollSpy.init(elems, {activeClass: 'active', getActiveElement:  function(id) {
+    return 'li a[href="#' + id + '"]';
+  }});
