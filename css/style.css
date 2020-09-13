@@ -40,7 +40,7 @@ body{
   justify-content: space-around;
   align-items: center;
   margin: 5rem 0;
-  background: rgba(44, 45, 44, .41);
+  background: #b2dfdb;
   min-height: 70vh;
   padding: 1rem;
 }
@@ -81,4 +81,8 @@ body{
 .contact__left img{
   width: 300px;
   border-radius: 1.5rem;
+}
+
+.contact__right{
+  width: 50%;
 }
